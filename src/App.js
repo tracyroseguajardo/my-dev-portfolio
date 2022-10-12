@@ -8,10 +8,8 @@ import Resume from './pages/Resume';
 import About from './pages/About';
 import Contact from './pages/Contact';
 
-import Project from './components/Project';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Nav from './components/Nav';
 
 function App() {
   return (

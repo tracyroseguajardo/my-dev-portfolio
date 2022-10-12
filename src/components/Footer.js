@@ -3,7 +3,7 @@ import React from 'react';
 function Footer(){
     return(
         <footer>
-            goodbye
+            TRG || tucson, az || 2022
         </footer>
     );
 }

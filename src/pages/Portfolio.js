@@ -3,10 +3,10 @@ import Project from '../components/Project';
 
 const Portfolio = () => {
     return(
-        <main>
+        <div>
             <Project />
             
-        </main>
+        </div>
 
     );
 };

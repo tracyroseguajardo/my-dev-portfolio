@@ -1,12 +1,14 @@
 import React from 'react';
-import Nav from './Nav'
+import Navigation from './Navigation';
+import cactus from '../assets/images/steiger-skinny.jpg'
 
 function Header() {
     return (
-        <header>
-            <h1>Tracy Rose Guajardo</h1>
-            <Nav />
-        </header>
+        <div>
+            <img src={cactus} alt="Cactus" className="hero"/>
+            {/* <h1>Tracy Rose Guajardo</h1> */}
+            <Navigation />
+        </div>
     );
 }
 

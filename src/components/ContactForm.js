@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 function ContactForm() {
-  // Here we set two state variables for firstName and lastName using `useState`
+  // Here we set three state variables for name, email, and message using `useState`
   const [name, setName] = useState('');
-//   const [email, setEmail] = useState('');
+  const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
   const handleInputChange = (e) => {
@@ -11,7 +13,7 @@ function ContactForm() {
     const { name, value } = e.target;
 
     // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
-    return name === 'name' ? setName(value) : setMessage(value);
+    return email === 'email' ? setEmail(value) : setMessage(value);
   };
 
   const handleFormSubmit = (e) => {
@@ -24,31 +26,26 @@ function ContactForm() {
     setMessage('');
   };
 
-  return (
-    <div>
-      {/* <p>
-        Hello {firstName} {lastName}
-      </p> */}
-      <form className="form">
-        <input
-          value={name}
-          name="name"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Name"
-        />
-        <input
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Message"
-        />
-        <button type="button" onClick={handleFormSubmit}>
-          Submit
-        </button>
-      </form>
-    </div>
+  return(
+    <Form>
+      <Form.Group className="mb-3" controlId="formBasicName">
+        <Form.Label>Name</Form.Label>
+        <Form.Control type="name" placeholder="Name" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>Email address</Form.Label>
+        <Form.Control type="email" placeholder="Enter email" />
+        <Form.Text className="text-muted">
+        </Form.Text>
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="formBasicName">
+        <Form.Label>Message</Form.Label>
+        <Form.Control type="message" placeholder="Send me a message" />
+      </Form.Group>
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
+    </Form>
   );
 }
 

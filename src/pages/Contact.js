@@ -3,9 +3,9 @@ import ContactForm from '../components/ContactForm';
 
 const Contact = () => {
     return(
-        <main>
+        <div>
             <ContactForm />
-        </main>
+        </div>
 
     );
 };

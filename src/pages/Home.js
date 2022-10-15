@@ -1,10 +1,12 @@
 import React from 'react';
+import Me from '../components/Me';
 
 const Home = () => {
     return(
-        <main>
-            {/* future development: add a sleek welcome landing page with animations */}
-        </main>
+        <div>
+            <Me />
+            <h2>Hello World</h2>
+        </div>
 
     );
 };

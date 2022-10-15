@@ -2,9 +2,9 @@ import React from 'react';
 
 const Resume = () => {
     return(
-        <main>
-            <p>Resume coming soon!</p>
-        </main>
+        <div>
+            <h2>Resume coming soon!</h2>
+        </div>
 
     );
 };

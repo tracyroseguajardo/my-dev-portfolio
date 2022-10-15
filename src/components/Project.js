@@ -1,6 +1,9 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 import styles from '../styles.css'
 import salutations from '../assets/images/salutations-screenshot.png';
@@ -76,15 +79,29 @@ function Project() {
 
     return (
         <div>
+            <Container>
+                <Row>
             {apps.map((app) => (
-                <div>
+                <div className='card'>
                     <h2>{app.title}</h2>
                     <img src={app.image} alt={app.title} className='screenshot' />
-                    <a href={app.deploy}>deployed app</a>
-                    <a href={app.repo}>github repo</a>
+                    <a href={app.deploy}>Take me to the Deployed App</a>
+                    <a href={app.repo}>Take me to Github Repo</a>
                 </div>
             ))}
-            
+            </Row>
+            </Container>
+            {/* <Container fluid="md">
+                <Row>
+                    <Col>
+                        <h2>{app.title}</h2>
+                        <img src={app.image} alt={app.title} className='screenshot' />
+                        <a href={app.deploy}>deployed app</a>
+                        <a href={app.repo}>github repo</a>
+                    </Col>
+                </Row>
+            </Container> */}
+
         </div>
 
     );

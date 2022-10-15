@@ -1,4 +1,7 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+
 import styles from '../styles.css'
 import salutations from '../assets/images/salutations-screenshot.png';
 import weather from '../assets/images/weather-dashboard-screenshot.png';
@@ -72,7 +75,7 @@ function Project() {
     ]
 
     return (
-        <main>
+        <div>
             {apps.map((app) => (
                 <div>
                     <h2>{app.title}</h2>
@@ -82,7 +85,7 @@ function Project() {
                 </div>
             ))}
             
-        </main>
+        </div>
 
     );
 }

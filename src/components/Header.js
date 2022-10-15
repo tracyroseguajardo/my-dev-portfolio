@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from './Navigation';
-import cactus from '../assets/images/steiger-skinny.jpg'
+import cactus from '../assets/images/steiger-skinniest.jpg'
 
 function Header() {
     return (

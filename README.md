@@ -45,3 +45,8 @@ If you have further questions you may send me an email at: tracyroseguajardo@gma
 Link to deployed application:
 [TRG Portfolio](https://lit-beyond-54863.herokuapp.com/)
 
+Screenshot of application:
+![TRG React Portfolio](./src/assets/images/trg-react-portfolio-screenshot.png)
+
+Link to github repository:
+[TRG React Portfolio](https://github.com/tracyroseguajardo/my-dev-portfolio)

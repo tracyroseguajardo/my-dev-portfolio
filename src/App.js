@@ -26,7 +26,7 @@ function App() {
                {/* Define a default route that will render the Home component */}
                <Route 
                  path="/" 
-                 element={<Home />} 
+                 element={<About />} 
                />
                {/* Define a route that will take in variable data */}
                <Route 

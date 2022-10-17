@@ -13,16 +13,52 @@ body {
 
 h2 {
   width: 400px;
+  text-align: center;
 }
 
 .card {
   width: 500px;
+  align-items: center;
+  margin: 5px;
 }
 
 .headshot {
-  width: 25%
+  width: 250px;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
 }
 
 footer {
   text-align: center;
+}
+
+.bio {
+  display:inline-flex;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.homer {
+  margin: 2%;
+}
+
+a {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:darkgreen;
+}
+
+h1 {
+  text-align: right;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+.resume {
+  display: flex;
+}
+
+.file {
+  text-align: right;
 }

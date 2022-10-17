@@ -23,6 +23,7 @@ function ContactForm() {
     // Alert the user their first and last name, clear the inputs
     alert(`Thank you for your message, ${name}`);
     setName('');
+    setEmail()
     setMessage('');
   };
 

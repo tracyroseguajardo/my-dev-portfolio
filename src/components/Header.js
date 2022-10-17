@@ -4,11 +4,11 @@ import cactus from '../assets/images/steiger-skinniest.jpg'
 
 function Header() {
     return (
-        <div>
+        <figure>
             <img src={cactus} alt="Cactus" className="hero"/>
-            {/* <h1>Tracy Rose Guajardo</h1> */}
             <Navigation />
-        </div>
+            <h1>Tracy Rose Guajardo</h1>
+        </figure>
     );
 }
 

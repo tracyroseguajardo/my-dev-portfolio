@@ -3,9 +3,14 @@ import Me from '../components/Me';
 
 const Home = () => {
     return(
-        <div>
+        <div className='home'>
+            <div>
             <Me />
-            <h2>Hello World</h2>
+            </div>
+            <div className='homer'>
+            <h2> Hello World</h2>
+            <p>Welcome to my portolio</p>
+            </div>
         </div>
 
     );

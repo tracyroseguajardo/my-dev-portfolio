@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/Col';
 
 import styles from '../styles.css'
 import salutations from '../assets/images/salutations-screenshot.png';
+import connectable from '../assets/images/connectable-screenshot.png';
 import weather from '../assets/images/weather-dashboard-screenshot.png';
 import gator from '../assets/images/gator-tracker-screenshot.png';
 import booksearch from '../assets/images/book-search-engine-screenshot.png';
@@ -26,6 +27,12 @@ function Project() {
             image: salutations,
             repo: "https://github.com/krsparks2/salutations",
             deploy: "https://krsparks2.github.io/salutations/"
+        },
+        {
+            title: "Connectable",
+            image: connectable,
+            repo: "https://github.com/LeaBryant/connect-able",
+            deploy: "https://intense-oasis-97749.herokuapp.com/"
         },
         {
             title: "Weather Dashboard",
